@@ -44,15 +44,8 @@ also need to modify the constr_cell_relax.F as below:
       SUBROUTINE CONSTR_CELL_RELAX(FCELL)
       USE prec
       REAL(q) FCELL(3,3)
-
-!     just one simple example
-!     relaxation in x directions only
-!      SAVE=FCELL(1,1)
-       FCELL(1,3)=0
-       FCELL(3,1)=0
-!      FCELL=0   ! F90 style: set the whole array to zero
-!      FCELL(1,1)=SAVE
-
+      FCELL(1,3)=0
+      FCELL(3,1)=0
       RETURN
       END SUBROUTINE
 where FCELL(1,3)=0 and FCELL(3,1)=0 are added.
