@@ -1,4 +1,4 @@
-# MatElasticPy
+# MatElastPy
  Computation prediction of ideal strength for a material
 Introduction
 
