@@ -24,7 +24,6 @@ It is for rotating the x, y and z axis as a Right-handed helical rule. The five 
 
 for indentation strength, find the below part in main.F of vasp source code.
 
-! for all DYN%ISIF greater or equal 3 cell shape optimisations will be done
         FACTSI = 0
         IF (DYN%ISIF>=3) FACTSI=10*DYN%POTIM*EVTOJ/AMTOKG/T_INFO%NIONS *1E-10_q
 
@@ -33,9 +32,7 @@ for indentation strength, find the below part in main.F of vasp source code.
            D2SIF(I,K)=TSIF(I,K)*FACTSI
         ENDDO
         D2SIF(I,I)=D2SIF(I,I)-DYN%PSTRESS/(EVTOJ*1E22_q)*LATT_CUR%OMEGA*FACTSI
-!lhy
         D2SIF(3,3)=D2SIF(3,3)-abs(D2SIF(1,3))*TAN(68.0/180.0*3.1415926)  
-!lhy
         ENDDO 
 
 where D2SIF(3,3)=D2SIF(3,3)-abs(D2SIF(1,3))*tan(68.0/180.0*3.1415926) is added.  This angle depends on the shape of indenter.
