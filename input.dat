@@ -1,0 +1,8 @@
+POSCAR
+0.01  #strain
+40    #step
+0 90 0    # alpha beta
+1
+mpirun -n 28 /public/home/fangjy/vasp.6.1.0/bin/vasp_std > vasp.log 2>&1
+
+
