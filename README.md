@@ -1,5 +1,11 @@
 # MatElastPy
- Computation prediction of ideal strength for a material
+
+A Python workflow for first-principles prediction of ideal tensile, shear, and indentation strength using VASP.
+
+If you use this code, please cite:
+
+**Z. Wang, X. Wang, X. Song, X. Zhang, H. Liu, and M. Zhang,**
+**"Computational prediction of ideal strength for a material"**
 Introduction
 
 Calculating Ideal strength of crystal structure using vasp. The original method is introduced by PRL 82,2713(1999)
@@ -60,6 +66,10 @@ Research highlights:
 
 4, Quan Li, Hanyu Liu, Dan Zhou, Weitao Zheng, Zhijian Wu and Yanming Ma, "novel low compressible and superhard carbon nitride: Body-centered tetragonal CN2" Phys. Chem. Chem. Phys., 14, 13081–13087 (2012)
 
-Dr. Hanyu Liu
-Email: lhy@calypso.cn
-       wangzx1120@mails.jlu.edu.cn
+
+**Zixun Wang
+Email: zixun@sas.upenn.edu**
+
+**Dr. Hanyu Liu
+Email: lhy@calypso.cn**
+       
