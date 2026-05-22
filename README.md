@@ -6,6 +6,7 @@ If you use this code, please cite:
 
 **Z. Wang, X. Wang, X. Song, X. Zhang, H. Liu, and M. Zhang,**
 **"Computational prediction of ideal strength for a material"**
+
 Introduction
 
 Calculating Ideal strength of crystal structure using vasp. The original method is introduced by PRL 82,2713(1999)
